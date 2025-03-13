@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <qrencode.h>
+#include <conio.h>
 
 void generate_qr_code(const char *text, const char *filename) {
     QRcode *qrcode = QRcode_encodeString(text, 0, QR_ECLEVEL_L, QR_MODE_8, 1);
